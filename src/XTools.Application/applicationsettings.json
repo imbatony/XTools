@@ -1,0 +1,40 @@
+﻿{
+  "SpecificationDocumentSettings": {
+    "DocumentTitle": "XTools",
+    "GroupOpenApiInfos": [
+      {
+        "Group": "UserCenter",
+        "Title": "用户中心",
+        "Description": "XTools",
+        "Version": "1.0.0",
+        "TermsOfService": "http://www.xtools.io/",
+        "Contact": {
+          "Name": "imbatony",
+          "Url": "https://github.com/imbatony/XTools",
+          "Email": "esfak47@gmail.com"
+        },
+        "License": {
+          "Name": "Apache-2.0",
+          "Url": "https://gitee.com/pear-admin/pear-admin-furion/blob/master/LICENSE"
+        },
+        "Order": 1
+      },
+      {
+        "Group": "SystemCenter",
+        "Title": "系统中心",
+        "Description": "XTools",
+        "Version": "1.0.0",
+        "TermsOfService": "http://www.xtools.io/",
+        "Contact": {
+          "Name": "imbatony",
+          "Url": "https://github.com/imbatony/XTools",
+          "Email": "esfak47@gmail.com"
+        },
+        "License": {
+          "Name": "Apache-2.0",
+          "Url": "https://gitee.com/pear-admin/pear-admin-furion/blob/master/LICENSE"
+        }
+      }
+    ]
+  }
+}

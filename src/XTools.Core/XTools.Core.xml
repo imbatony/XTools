@@ -1,0 +1,728 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XTools.Core</name>
+    </assembly>
+    <members>
+        <member name="T:XTools.Core.SecurityConsts">
+            <summary>
+            权限定义.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.USER_SERVICE_PROFILE_SELF">
+            <summary>
+            Defines the USER_SERVICE_PROFILE_SELF.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.USER_SERVICE_PROFILE">
+            <summary>
+            Defines the USER_SERVICE_PROFILE.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.USER_SERVICE_LIST">
+            <summary>
+            Defines the USER_SERVICE_LIST.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.USER_SERVICE_MODIFY_SELF">
+            <summary>
+            Defines the USER_SERVICE_MODIFY_SELF.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.USER_SERVICE_MODIFY">
+            <summary>
+            Defines the USER_SERVICE_MODIFY.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.USER_SERVICE_DELETE">
+            <summary>
+            Defines the USER_SERVICE_DELETE.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.USER_SERVICE_ADD">
+            <summary>
+            Defines the USER_SERVICE_ADD.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.USER_SERVICE_CHANGE_PASSWORD">
+            <summary>
+            Defines the USER_SERVICE_CHANGE_PASSWORD.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.USER_SERVICE_ROLES_SELF">
+            <summary>
+            Defines the USER_SERVICE_ROLES_SELF.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.USER_SERVICE_ROLES">
+            <summary>
+            Defines the USER_SERVICE_ROLES.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.USER_SERVICE_SECURITIES_SELF">
+            <summary>
+            Defines the USER_SERVICE_SECURITIES_SELF.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.USER_SERVICE_SECURITIES">
+            <summary>
+            Defines the USER_SERVICE_SECURITIES.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.ROLE_SERVICE_LIST">
+            <summary>
+            Defines the ROLE_SERVICE_LIST.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.ROLE_SERVICE_ADD">
+            <summary>
+            Defines the ROLE_SERVICE_ADD.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.ROLE_SERVICE_MODIFY">
+            <summary>
+            Defines the ROLE_SERVICE_MODIFY.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.ROLE_SERVICE_DELETE">
+            <summary>
+            Defines the ROLE_SERVICE_DELETE.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.ROLE_SERVICE_GIVE">
+            <summary>
+            Defines the ROLE_SERVICE_GIVE.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.SECURITY_SERVICE_LIST">
+            <summary>
+            Defines the SECURITY_SERVICE_LIST.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.SECURITY_SERVICE_GIVE">
+            <summary>
+            Defines the SECURITY_SERVICE_GIVE.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.SECURITY_SERVICE_REFRESH">
+            <summary>
+            Defines the SECURITY_SERVICE_REFRESH.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SecurityConsts.SECURITY_SERVICE_ALL">
+            <summary>
+            Defines the SECURITY_SERVICE_ALL.
+            </summary>
+        </member>
+        <member name="T:XTools.Core.SystemData">
+            <summary>
+            数据字典.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.SystemData.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XTools.Core.SystemData"/> class.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemData.Name">
+            <summary>
+            Gets or sets the Name
+            分类名称.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemData.Remark">
+            <summary>
+            Gets or sets the Remark
+            分类描述.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemData.Sequence">
+            <summary>
+            Gets or sets the Sequence
+            序号/排序.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemData.CategoryId">
+            <summary>
+            Gets or sets the CategoryId
+            所属分类Id.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemData.Enabled">
+            <summary>
+            Gets or sets a value indicating whether Enabled
+            是否启用.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemData.Category">
+            <summary>
+            Gets or sets the Category
+            所属分类.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemData.IsDeleted">
+            <summary>
+            Gets or sets a value indicating whether IsDeleted
+            软删除.
+            </summary>
+        </member>
+        <member name="T:XTools.Core.SystemDataCategory">
+            <summary>
+            数据字典类别.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.SystemDataCategory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XTools.Core.SystemDataCategory"/> class.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemDataCategory.Name">
+            <summary>
+            Gets or sets the Name
+            分类名称.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemDataCategory.Remark">
+            <summary>
+            Gets or sets the Remark
+            分类描述.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemDataCategory.Sequence">
+            <summary>
+            Gets or sets the Sequence
+            序号/排序.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemDataCategory.HigherId">
+            <summary>
+            Gets or sets the HigherId
+            上级分类 Id.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemDataCategory.Enabled">
+            <summary>
+            Gets or sets a value indicating whether Enabled
+            是否启用.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemDataCategory.Higher">
+            <summary>
+            Gets or sets the Higher
+            上级分类.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemDataCategory.Sublevels">
+            <summary>
+            Gets or sets the Sublevels
+            次级列表.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemDataCategory.Data">
+            <summary>
+            Gets or sets the Data
+            分组数据.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.SystemDataCategory.IsDeleted">
+            <summary>
+            Gets or sets a value indicating whether IsDeleted
+            软删除.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.SystemDataCategory.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{XTools.Core.SystemDataCategory},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置实体.
+            </summary>
+            <param name="entityBuilder">.</param>
+            <param name="dbContext">.</param>
+            <param name="dbContextLocator">.</param>
+        </member>
+        <member name="T:XTools.Core.Role">
+            <summary>
+            角色表.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.Role.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XTools.Core.Role"/> class.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Role.Name">
+            <summary>
+            Gets or sets the Name
+            角色名称.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Role.Remark">
+            <summary>
+            Gets or sets the Remark
+            角色描述.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Role.Enabled">
+            <summary>
+            Gets or sets a value indicating whether Enabled
+            是否启用.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Role.Users">
+            <summary>
+            Gets or sets the Users
+            多对多.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Role.UserRoles">
+            <summary>
+            Gets or sets the UserRoles
+            多对多中间表.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Role.Securities">
+            <summary>
+            Gets or sets the Securities
+            多对多.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Role.RoleSecurities">
+            <summary>
+            Gets or sets the RoleSecurities
+            多对多中间表.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Role.IsDeleted">
+            <summary>
+            Gets or sets a value indicating whether IsDeleted
+            软删除.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.Role.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{XTools.Core.Role},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置多对多关系.
+            </summary>
+            <param name="entityBuilder">.</param>
+            <param name="dbContext">.</param>
+            <param name="dbContextLocator">.</param>
+        </member>
+        <member name="T:XTools.Core.RoleSecurity">
+            <summary>
+            角色和权限关系表.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.RoleSecurity.RoleId">
+            <summary>
+            Gets or sets the RoleId
+            角色Id.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.RoleSecurity.Role">
+            <summary>
+            Gets or sets the Role
+            一对一引用.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.RoleSecurity.SecurityId">
+            <summary>
+            Gets or sets the SecurityId
+            权限Id.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.RoleSecurity.Security">
+            <summary>
+            Gets or sets the Security
+            一对一引用.
+            </summary>
+        </member>
+        <member name="T:XTools.Core.Security">
+            <summary>
+            权限表.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.Security.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XTools.Core.Security"/> class.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Security.UniqueName">
+            <summary>
+            Gets or sets the UniqueName
+            权限唯一名（每一个接口）.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Security.Remark">
+            <summary>
+            Gets or sets the Remark
+            全新描述.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Security.Enabled">
+            <summary>
+            Gets or sets a value indicating whether Enabled
+            是否启用.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Security.Roles">
+            <summary>
+            Gets or sets the Roles
+            多对多.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Security.RoleSecurities">
+            <summary>
+            Gets or sets the RoleSecurities
+            多对多中间表.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.Security.IsDeleted">
+            <summary>
+            Gets or sets a value indicating whether IsDeleted
+            软删除.
+            </summary>
+        </member>
+        <member name="T:XTools.Core.User">
+            <summary>
+            用户表.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.User.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XTools.Core.User"/> class.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.User.Account">
+            <summary>
+            Gets or sets the Account
+            账号.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.User.Password">
+            <summary>
+            Gets or sets the Password
+            密码（采用 MD5 加密）.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.User.Nickname">
+            <summary>
+            Gets or sets the Nickname
+            昵称.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.User.Photo">
+            <summary>
+            Gets or sets the Photo
+            头像（OSS地址）.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.User.Synopsis">
+            <summary>
+            Gets or sets the Synopsis
+            简介.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.User.Gender">
+            <summary>
+            Gets or sets the Gender
+            性别.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.User.SigninedTime">
+            <summary>
+            Gets or sets the SigninedTime
+            最近登录时间.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.User.Enabled">
+            <summary>
+            Gets or sets a value indicating whether Enabled
+            是否启用.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.User.Roles">
+            <summary>
+            Gets or sets the Roles
+            多对多.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.User.UserRoles">
+            <summary>
+            Gets or sets the UserRoles
+            多对多中间表.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.User.IsDeleted">
+            <summary>
+            Gets or sets a value indicating whether IsDeleted
+            软删除.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.User.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{XTools.Core.User},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置多对多关系.
+            </summary>
+            <param name="entityBuilder">.</param>
+            <param name="dbContext">.</param>
+            <param name="dbContextLocator">.</param>
+        </member>
+        <member name="T:XTools.Core.UserRole">
+            <summary>
+            用户和角色关系表.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.UserRole.UserId">
+            <summary>
+            Gets or sets the UserId
+            用户Id.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.UserRole.User">
+            <summary>
+            Gets or sets the User
+            一对一引用.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.UserRole.RoleId">
+            <summary>
+            Gets or sets the RoleId
+            角色Id.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.UserRole.Role">
+            <summary>
+            Gets or sets the Role
+            一对一引用.
+            </summary>
+        </member>
+        <member name="T:XTools.Core.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="F:XTools.Core.Gender.Male">
+            <summary>
+            男
+            </summary>
+        </member>
+        <member name="F:XTools.Core.Gender.Female">
+            <summary>
+            女
+            </summary>
+        </member>
+        <member name="T:XTools.Core.SystemErrorCodes">
+            <summary>
+            业务日志错误码
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SystemErrorCodes.u1000">
+            <summary>
+            用户名或密码不正确
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SystemErrorCodes.u1001">
+            <summary>
+            非法操作！禁止删除自己
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SystemErrorCodes.u1002">
+            <summary>
+            记录不存在
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SystemErrorCodes.u1003">
+            <summary>
+            账号已存在
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SystemErrorCodes.u1004">
+            <summary>
+            旧密码不匹配
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SystemErrorCodes.u1005">
+            <summary>
+            测试数据禁止更改 admin 密码
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SystemErrorCodes.u1006">
+            <summary>
+            数据已存在
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SystemErrorCodes.u1007">
+            <summary>
+            数据不存在或含有关联引用，禁止删除
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SystemErrorCodes.u1008">
+            <summary>
+            禁止为管理员分配角色
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SystemErrorCodes.u1009">
+            <summary>
+            记录含有不存在数据
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SystemErrorCodes.u1010">
+            <summary>
+            禁止为超级管理员角色分配权限
+            </summary>
+        </member>
+        <member name="F:XTools.Core.SystemErrorCodes.u1011">
+            <summary>
+            非法数据
+            </summary>
+        </member>
+        <member name="T:XTools.Core.IUserManager">
+            <summary>
+            用户管理接口.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.IUserManager.UserId">
+            <summary>
+            Gets the UserId
+            获取用户 Id.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.IUserManager.User">
+            <summary>
+            Gets the User
+            获取用户信息.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.IUserManager.CheckUserAsync(System.Int32,System.Boolean)">
+            <summary>
+            检查用户是否有效.
+            </summary>
+            <param name="userId">.</param>
+            <param name="tracking">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:XTools.Core.IUserManager.GetSecuritiesAsync(System.Int32)">
+            <summary>
+            查询用户权限.
+            </summary>
+            <param name="userId">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:XTools.Core.UserManager">
+            <summary>
+            用户管理接口.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.UserManager._userRepository">
+            <summary>
+            用户仓储.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.UserManager._httpContextAccessor">
+            <summary>
+            HttpContext 访问器.
+            </summary>
+        </member>
+        <member name="F:XTools.Core.UserManager._memoryCache">
+            <summary>
+            缓存.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.UserManager.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Furion.DatabaseAccessor.IRepository{XTools.Core.User},Microsoft.Extensions.Caching.Memory.IMemoryCache)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XTools.Core.UserManager"/> class.
+            </summary>
+            <param name="httpContextAccessor">.</param>
+            <param name="userRepository">.</param>
+            <param name="memoryCache">.</param>
+        </member>
+        <member name="P:XTools.Core.UserManager.UserId">
+            <summary>
+            Gets the UserId
+            获取用户 Id.
+            </summary>
+        </member>
+        <member name="P:XTools.Core.UserManager.User">
+            <summary>
+            Gets the User
+            获取用户信息.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.UserManager.CheckUserAsync(System.Int32,System.Boolean)">
+            <summary>
+            检查用户是否有效.
+            </summary>
+            <param name="userId">.</param>
+            <param name="tracking">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:XTools.Core.UserManager.GetSecuritiesAsync(System.Int32)">
+            <summary>
+            查询用户权限.
+            </summary>
+            <param name="userId">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:XTools.Core.SeedData.RoleSeedData">
+            <summary>
+            用户表种子数据 <see cref="T:XTools.Core.Role"/>.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.SeedData.RoleSeedData.HasData(Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            种子数据.
+            </summary>
+            <param name="dbContext">.</param>
+            <param name="dbContextLocator">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:XTools.Core.SeedData.SecuritySeedData">
+            <summary>
+            用户表种子数据 <see cref="T:XTools.Core.Security"/>.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.SeedData.SecuritySeedData.HasData(Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            种子数据.
+            </summary>
+            <param name="dbContext">.</param>
+            <param name="dbContextLocator">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:XTools.Core.SeedData.SystemDataCategorySeedData">
+            <summary>
+            数据字典分类种子数据.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.SeedData.SystemDataCategorySeedData.HasData(Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            种子数据.
+            </summary>
+            <param name="dbContext">.</param>
+            <param name="dbContextLocator">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:XTools.Core.SeedData.SystemDataSeedData">
+            <summary>
+            数据字典种子数据.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.SeedData.SystemDataSeedData.HasData(Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            种子数据.
+            </summary>
+            <param name="dbContext">.</param>
+            <param name="dbContextLocator">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:XTools.Core.SeedData.UserSeedData">
+            <summary>
+            用户表种子数据 <see cref="T:XTools.Core.User"/>.
+            </summary>
+        </member>
+        <member name="M:XTools.Core.SeedData.UserSeedData.HasData(Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            种子数据.
+            </summary>
+            <param name="dbContext">.</param>
+            <param name="dbContextLocator">.</param>
+            <returns>.</returns>
+        </member>
+    </members>
+</doc>

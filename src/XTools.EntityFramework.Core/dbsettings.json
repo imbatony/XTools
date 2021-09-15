@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "Xtools": "Data Source=./Xtools.db"
+  }
+}

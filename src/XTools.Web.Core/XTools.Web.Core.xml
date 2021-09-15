@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XTools.Web.Core</name>
+    </assembly>
+    <members>
+        <member name="T:XTools.Web.Core.JwtHandler">
+            <summary>
+            Defines the <see cref="T:XTools.Web.Core.JwtHandler" />.
+            </summary>
+        </member>
+        <member name="M:XTools.Web.Core.JwtHandler.PipelineAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Microsoft.AspNetCore.Http.DefaultHttpContext)">
+            <summary>
+            The PipelineAsync.
+            </summary>
+            <param name="context">The context<see cref="T:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext"/>.</param>
+            <param name="httpContext">The httpContext<see cref="T:Microsoft.AspNetCore.Http.DefaultHttpContext"/>.</param>
+            <returns>The <see cref="!:Task&lt;bool&gt;"/>.</returns>
+        </member>
+        <member name="M:XTools.Web.Core.JwtHandler.CheckAuthorzieAsync(Microsoft.AspNetCore.Http.DefaultHttpContext)">
+            <summary>
+            检查权限.
+            </summary>
+            <param name="httpContext">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:XTools.Web.Core.Startup">
+            <summary>
+            Defines the <see cref="T:XTools.Web.Core.Startup" />.
+            </summary>
+        </member>
+        <member name="M:XTools.Web.Core.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            The ConfigureServices.
+            </summary>
+            <param name="services">The services<see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.</param>
+        </member>
+        <member name="M:XTools.Web.Core.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            The Configure.
+            </summary>
+            <param name="app">The app<see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/>.</param>
+            <param name="env">The env<see cref="T:Microsoft.AspNetCore.Hosting.IWebHostEnvironment"/>.</param>
+        </member>
+    </members>
+</doc>
