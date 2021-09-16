@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login Page</title>
+		<!-- 样 式 文 件 -->
+		<link rel="stylesheet" href="component/pear/css/pear.css" />
+		<link rel="stylesheet" href="admin/css/other/login.css" />
+	</head>
+	<!-- 代 码 结 构 -->
+	<body background="admin/images/background2.svg" style="background-size: cover;">
+		<form class="layui-form" action="javascript:void(0);">
+			<div class="layui-form-item">
+				<img class="logo" src="admin/images/logo.png" />
+				<div class="title">Pear Admin</div>
+				<div class="desc">
+					明 湖 区 最 具 影 响 力 的 设 计 规 范 之 一
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<input placeholder="账 户 : admin " name="account" lay-verify="account" hover class="layui-input" />
+			</div>
+			<div class="layui-form-item">
+				<input placeholder="密 码 : admin " name="password" lay-verify="password" hover class="layui-input" />
+			</div>
+			<div class="layui-form-item">
+				<input type="checkbox" name="" title="记住密码" lay-skin="primary" checked>
+			</div>
+			<div class="layui-form-item">
+				<button type="button" class="pear-btn pear-btn-success login" lay-submit lay-filter="login">
+					登 入
+				</button>
+			</div>
+		</form>
+		<!-- 资 源 引 入 -->
+		<script src="component/layui/layui.js"></script>
+		<script src="component/pear/pear.js"></script>
+		<script>
+			layui.use(['form', 'jquery', 'button', 'popup', 'context'], function() {
+				var form = layui.form;
+				var button = layui.button;
+				var popup = layui.popup;
+				var $ = layui.jquery;
+				var context = layui.context;
+
+				var basePath = context.get("base-path");
+
+				form.verify({
+					account: function(value, item) {
+						if (value.length < 4) return '请输入至少4位账户';
+					},
+					password: function(value) {
+						if (value.length < 4) return '请输入至少4位密码';
+					}
+				});
+
+				form.on('submit(login)', function(data) {
+					var btn = button.load({elem: '.login'})
+					$.ajax({
+						url: basePath + '/api/auth/login',
+						data: JSON.stringify(data.field),
+						dataType: 'json',
+						contentType: 'application/json',
+						type: 'post',
+						success: function(result) {
+							if (result.succeeded) {
+								btn.stop(function() {
+									popup.success("登录成功", function() {
+										location.href = "index.html";
+										// 将 token 存储 localStore
+										context.put("token","Bearer "+result.data.accessToken)
+									});
+								})
+							} else {
+								btn.stop(function() {
+									popup.failure("登录失败");
+								})
+							}
+						}
+					})
+					return false;
+				});
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+[{
+		"id": 1,
+		"title": "工作空间",
+		"type": 0,
+		"icon": "layui-icon layui-icon-console",
+		"href": "",
+		"children": [{
+			"id": 10,
+			"title": "控制后台",
+			"icon": "layui-icon layui-icon-console",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/console/console1.html"
+		}, {
+			"id": 13,
+			"title": "数据分析",
+			"icon": "layui-icon layui-icon-console",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "view/console/console2.html"
+		}]
+	},
+	{
+		"id": "system",
+		"title": "系统管理",
+		"icon": "layui-icon layui-icon-set-fill",
+		"type": 0,
+		"href": "",
+		"children": [{
+				"id": 601,
+				"title": "用户管理",
+				"icon": "layui-icon layui-icon-face-smile",
+				"type": 1,
+				"openType": "_iframe",
+				"href": "view/system/user/main.html"
+			},
+			{
+				"id": 602,
+				"title": "角色管理",
+				"icon": "layui-icon layui-icon-face-cry",
+				"type": 1,
+				"openType": "_iframe",
+				"href": "view/system/role/main.html"
+			},
+			{
+				"id": 603,
+				"title": "权限管理",
+				"icon": "layui-icon layui-icon-face-cry",
+				"type": 1,
+				"openType": "_iframe",
+				"href": "view/system/power/main.html"
+			},
+			{
+				"id": 605,
+				"title": "行为日志",
+				"icon": "layui-icon layui-icon-face-cry",
+				"type": 1,
+				"openType": "_iframe",
+				"href": "view/system/log/main.html"
+			}, {
+				"id": 606,
+				"title": "数据字典",
+				"icon": "layui-icon layui-icon-face-cry",
+				"type": 1,
+				"openType": "_iframe",
+				"href": "view/system/dict/main.html"
+			}
+
+		]
+	},{
+		"id": 3,
+		"title": "开发工具",
+		"type": 0,
+		"icon": "layui-icon layui-icon-console",
+		"href": "",
+		"children": [{
+			"id": 130,
+			"title": "开发文档",
+			"icon": "layui-icon layui-icon-console",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "http://api.furion.pearadmin.com/index.html"
+		}, {
+			"id": 133,
+			"title": "表单设计",
+			"icon": "layui-icon layui-icon-console",
+			"type": 1,
+			"openType": "_iframe",
+			"href": "component/code/index.html"
+		}]
+	}
+]

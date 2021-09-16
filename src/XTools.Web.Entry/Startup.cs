@@ -6,9 +6,9 @@
 
 namespace XTools.Web.Entry
 {
-    using Furion.DependencyInjection;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.StaticFiles;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
 
@@ -37,7 +37,10 @@ namespace XTools.Web.Entry
         /// <param name="services">The services<see cref="IServiceCollection"/>.</param>
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddSpaStaticFiles(configuration =>
+            {
+                configuration.RootPath = "ClientApp";
+            });
         }
 
         /// <summary>
@@ -47,7 +50,19 @@ namespace XTools.Web.Entry
         /// <param name="env">The env<see cref="IWebHostEnvironment"/>.</param>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            var provider = new FileExtensionContentTypeProvider();
+            provider.Mappings[".yml"] = "text/yml";
+            app.UseSpaStaticFiles(new StaticFileOptions()
+            {
+                ContentTypeProvider = provider
+            });
 
+            app.Map("/admin", (adminApp) =>{
+                adminApp.UseSpa(spa =>{
+                    spa.Options.SourcePath = "ClientApp";
+                    spa.Options.DefaultPage = "/admin.html";
+                });
+            });
         }
     }
 }
